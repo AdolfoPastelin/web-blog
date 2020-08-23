@@ -66,12 +66,62 @@ body {
 	transition: all 300ms;
 }
 
+#logo:hover{
+	border-radius: 2px;
+	background-color: #ccc;
+	color: #000;
+}
+
 #logo .gear {
 	display: block;
 	float: left;
 	font-size: 30px;
 	margin-top: 6px;
 	margin-left: 26px;
+	/* Animación definida */
+	animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Animación rotate gear (definida arriba) */
+@keyframes rotate-gear {
+    from {
+    transform: rotateZ(0deg);
+    }
+    to {
+    transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover .gear{
+	animation: fromBelow 500ms linear;
+}
+
+@keyframes fromBelow{
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(200%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+#logo:hover h3 {
+	animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight{
+	from {
+		transform: translateX(0%);
+	}
+	to{
+		transform: translateX(200%);
+	}
 }
 
 #header {

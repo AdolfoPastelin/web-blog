@@ -192,10 +192,10 @@ body {
 	line-height: 52px;
 	text-shadow: 2px 2px 1px #000;
 	font-weight: normal;
-	animation: showText 2s linear;
+	animation: showText 1s linear;
 }
 
-@keyframes showText { /* SEGUIR MODIFICANDO AQUI */
+@keyframes showText {
 	0%{
 		transform: translateX(-600%) scale(5,5);
 		opacity: 1;
@@ -232,6 +232,10 @@ body {
 	cursor: pointer;
 }
 
+.card:hover{
+	background-color: #000;
+}
+
 /* iconos */
 .card .icon {
 	display: block;
@@ -243,6 +247,22 @@ body {
 	margin: 0px auto;
 }
 
+.card:hover .icon{
+	font-size: 70px;
+	color: #37bcf9;
+	animation: showIcon 200ms linear;	
+}
+
+@keyframes showIcon{
+	from{
+		transform: translateY(-200%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+
 .card .category {
 	width: 100%;
 	height: 50px;
@@ -251,6 +271,23 @@ body {
 	font-weight: bold;
 	text-align: center;
 	color: #00538c;
+	transition: all 300ms;
+}
+
+.card:hover .category{
+	color: #fff;
+	animation: showCategory 300ms linear;
+}
+
+@keyframes showCategory {
+	from {
+		transform: translateY(-300%);
+		color: #000;
+	}
+	to {
+		transform: translateY(0%);
+		color: #fff;
+	}
 }
 
 .card .description {
@@ -258,6 +295,23 @@ body {
 	color: #000;
 	font-family: 'trebuchetMS';
 	font-size: 15px;
+	transition: all 300ms;
+}
+
+.card:hover .description {
+	color: #fff;
+	animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+	from {
+		transform: translateX(-300%);
+		color: #000;
+	}
+	to {
+		transform: translateX(0%);
+		color: #fff;
+	}
 }
 
 /* Clearfix */

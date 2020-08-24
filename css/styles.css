@@ -591,7 +591,7 @@ aside h3 {
 	margin-top: 60px;
 	line-height: 100px;
 	text-align: center;
-
+	transition: all 1s;
 }
 
 #blog a{
@@ -601,10 +601,42 @@ aside h3 {
 	letter-spacing: 3px;
 	text-decoration: none;
 	color: #00538c;
+	transition: all 1s;
 }
 
 #blog a:hover{
 	text-decoration: underline;
+}
+
+#blog:hover {
+	background-color: #333;
+	border: 10px solid #37bcf9;
+	border-radius: 240px;
+	box-shadow: 0px 0px 10px gray;
+	animation: blink 10s linear infinite;
+}
+
+#blog:hover a {
+	color: #fff;
+	text-shadow: 1px 1px 1px #333, 1px 2px 1px #333, 1px 3px 1px #333, 1px 4px 1px #333, 1px 5px 1px #333, 1px 6px 1px #333;
+}
+
+@keyframes blink {
+	0% {
+		border: 10px solid #37bcf9;
+	}
+	25% {
+		border: 10px solid green;
+	}
+	50% {
+		border: 10px solid yellow;
+	}
+	75% {
+		border: 10px solid white;
+	}
+	100% {
+		border: 10px solid #37bcf9;
+	}
 }
 
 /* Estilos del footer */
@@ -656,6 +688,11 @@ aside h3 {
 	margin-top: 10px;
 	padding: 5px;
 	border-bottom: 1px solid #ccc;
+}
+
+#footer ul li:hover a {
+	padding-left: 40px;
+	color: white;
 }
 
 #footer ul li a{

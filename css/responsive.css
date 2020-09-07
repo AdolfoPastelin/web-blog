@@ -1,0 +1,52 @@
+@media (max-width:1400px) {
+	.wrap {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	#banner{
+		width: 92%;
+	}
+
+	#banner h1{
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.card{
+		width: 14%;
+		margin-left: 3.5%;
+	}
+
+	/* #TODO: agregar los estilos CSS para el responsive en la medida de corte
+				al reducir a 1200px la pantalla. */
+
+	.card .icon{
+		font-size: 45px;
+	}
+
+	.card .category{
+		font-size: 18px;
+	}
+
+	.card .description{
+		font-size: 14px;
+	}
+
+	.articles{
+		width: 55%;
+	}
+
+	.articles article{
+		width: 97.5%;
+	}
+
+	/* #footer > .wrap > div{
+		width: 24%;
+	} */
+
+	#footer h5{
+		font-size: 20px;
+	}
+}
+

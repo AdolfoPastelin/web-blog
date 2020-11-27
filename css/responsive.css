@@ -43,9 +43,6 @@
 	}
 }
 
-/* #TODO:agregar los estilos CSS para el responsive en la medida de corte
-	al reducir a 1130px la pantalla. */
-
 @media (max-width: 1130px) {
 	.articles {
 		width: 50%;
